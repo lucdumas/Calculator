@@ -1,0 +1,199 @@
+
+
+/*------------------------------------*/
+/* Setup*/
+/*------------------------------------*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-rendering: optimizeLegibility;
+}
+
+
+/*------------------------------------*/
+/* Formatting & Stylings */
+/*------------------------------------*/
+body {
+    background-color: #cbd5e1;
+    padding-top: 85px;
+}
+
+#calculator {
+    margin: auto;
+    padding: 20px 20px 20px 20px;
+    width: 400px;
+    height: 500px;
+    display: flex;
+    flex-direction: column; 
+    background-color: #475569;
+    border-radius: 5px;
+}
+
+.top{
+    height: 100px;
+    background-color:#566479; 
+    border-radius: 2px;
+    margin-bottom: 15px;
+
+}
+
+.bottom {
+    border-radius: 4px;
+    height: 100%;
+    gap: ;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.numbers, .operators {
+    border: solid .1px #566479;
+    border-radius: 1px;
+    font: 23px bold Helvetica, Arial, sans-serif;
+}
+.operators {
+    background-color: orange;
+}
+
+.display {
+    position:relative;
+    font: 35px bold Helvetica, Arial, sans-serif;
+    color: #f8fafc;
+    overflow: hidden;
+}
+
+.display p {
+    position:absolute;
+    bottom:0;
+    right:0;
+    padding: 9px;
+    overflow: hidden;
+}
+ 
+button {
+    cursor: pointer ;
+}
+
+/*------------------------------------*/
+/* Number/Decimal Buttons */
+/*------------------------------------*/
+
+
+
+#num0 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 5;
+    grid-row-end: 5;
+}
+
+#num1 {
+    grid-column-start: 1;
+    grid-row-start: 4;
+}
+ 
+#num2 {
+    grid-column-start: 2;
+    grid-row-start: 4;
+}
+
+#num3 {
+   grid-column-start: 3;
+    grid-row-start: 4;
+}
+
+#num4 {
+    grid-column-start: 1;
+    grid-row-start: 3;
+}
+
+#num5 {
+    grid-column-start: 2;
+    grid-row-start: 3;
+}
+
+#num6 {
+   grid-column-start: 3;
+    grid-row-start: 3;
+}
+
+#num7 {
+    grid-column-start: 1;
+    grid-row-start: 2;
+}
+
+#num8 {
+   grid-column-start: 2;
+    grid-row-start: 2;
+}
+
+#num9 {
+    grid-column-start: 3;
+    grid-row-start: 2;
+}
+
+#decimal {
+    grid-column-start: 3;
+    grid-row-start: 5;
+}
+
+/*------------------------------------*/
+/* Function Buttons*/
+/*------------------------------------*/
+
+#addition {
+    grid-column-start: 4;
+    grid-row-start: 4;
+}
+#subtraction {
+    grid-column-start: 4;
+    grid-row-start: 3;
+}
+
+#multiplication {
+    grid-column-start: 4;
+    grid-row-start: 2;
+}
+
+#division {
+    grid-column-start: 4;
+    grid-row-start: 1;
+}
+
+#percentage {
+    grid-column-start: 3;
+    grid-row-start: 1;
+}
+
+#clear {
+    grid-column-start: 1;
+    grid-row-start: 1;
+    font-size: 26px;
+    font-weight: bolder;
+}
+
+#backspace {
+    grid-column-start: 2;
+    grid-row-start: 1;
+}
+
+#equals {
+    grid-column-start: 4;
+    grid-row-start: 5;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
